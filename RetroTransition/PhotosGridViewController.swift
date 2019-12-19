@@ -2,7 +2,7 @@ import UIKit
 import RetroTransition
 
 class PhotosGridViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    let images : [UIImage]!
+    var images : [UIImage]!
     let transitionLabel = UILabel()
     
     let transitionClasses = [
@@ -29,7 +29,11 @@ class PhotosGridViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        images = (1...34).map({ "photo\($0).jpg" }).compactMap({ UIImage.init(named: $0) })
+        let repeatedImages = ["photo1.jpg", "photo2.jpg", "photo3.jpg", "photo4.jpg"]
+        images = []
+        for _ in (0...6) {
+            images.append(contentsOf: repeatedImages.compactMap({ UIImage.init(named: $0) }))
+        }
         super.init(nibName: nil, bundle: nil)
     }
     
