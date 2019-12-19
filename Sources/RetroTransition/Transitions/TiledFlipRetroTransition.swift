@@ -67,11 +67,11 @@ public class TiledFlipRetroTransition : RetroTransition {
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
         
-        let squareSizeWidth : CGFloat = fromVC.view.bounds.size.width / 5
-        let squareSizeHeight : CGFloat = fromVC.view.bounds.size.height / 10
+        let squareSizeWidth : CGFloat = fromVC.view.bounds.size.width / 10
+        let squareSizeHeight : CGFloat = fromVC.view.bounds.size.height / 7
         
         let numRows = 1 + Int(toVC.view.bounds.size.width / squareSizeWidth)
-        let numCols = 1 + Int(toVC.view.bounds.size.height / squareSizeWidth)
+        let numCols = 1 + Int(toVC.view.bounds.size.height / squareSizeHeight)
         for x in (0...numRows) {
             for y in (0...numCols) {
                 let rect = CGRect(x: (CGFloat(x) * squareSizeWidth),y: (CGFloat(y) * squareSizeHeight), width:squareSizeWidth, height: squareSizeHeight)
