@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D825ECF23ABA16400027258 /* RetroTransition in Frameworks */ = {isa = PBXBuildFile; productRef = 4D825ECE23ABA16400027258 /* RetroTransition */; };
 		F664C9182241487500BAB2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664C9172241487500BAB2F7 /* AppDelegate.swift */; };
 		F664C91A2241487500BAB2F7 /* PhotosGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F664C9192241487500BAB2F7 /* PhotosGridViewController.swift */; };
 		F664C91F2241487500BAB2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F664C91E2241487500BAB2F7 /* Assets.xcassets */; };
@@ -114,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D825ECF23ABA16400027258 /* RetroTransition in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +212,9 @@
 			dependencies = (
 			);
 			name = RetroTransitionExample;
+			packageProductDependencies = (
+				4D825ECE23ABA16400027258 /* RetroTransition */,
+			);
 			productName = RetroTransition;
 			productReference = F664C9142241487500BAB2F7 /* RetroTransitionExample.app */;
 			productType = "com.apple.product-type.application";
@@ -239,6 +244,9 @@
 				Base,
 			);
 			mainGroup = F664C90B2241487500BAB2F7;
+			packageReferences = (
+				4D825ECD23ABA16400027258 /* XCRemoteSwiftPackageReference "RetroTransition" */,
+			);
 			productRefGroup = F664C9152241487500BAB2F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -497,6 +505,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D825ECD23ABA16400027258 /* XCRemoteSwiftPackageReference "RetroTransition" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/terhechte/RetroTransition";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D825ECE23ABA16400027258 /* RetroTransition */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D825ECD23ABA16400027258 /* XCRemoteSwiftPackageReference "RetroTransition" */;
+			productName = RetroTransition;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F664C90C2241487500BAB2F7 /* Project object */;
 }

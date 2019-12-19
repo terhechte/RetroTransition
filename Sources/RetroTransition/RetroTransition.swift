@@ -1,4 +1,5 @@
-import UIKit
+@_exported import UIKit
+@_exported import Foundation
 
 class RetroBasicAnimation : CABasicAnimation, CAAnimationDelegate {
     public var onFinish : (() -> (Void))?
