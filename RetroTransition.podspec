@@ -27,8 +27,8 @@ Fun implementations of UIViewControllerAnimatedTransitioning for 90s inspired tr
   s.source           = { :git => 'https://github.com/wcgray/RetroTransition.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.swift_version = '4.2'
-  s.source_files = 'RetroTransition/Transitions/**/*.{swift,m,h}'
-  s.public_header_files = 'RetroTransition/Transitions/*.h'
+  s.source_files = 'Sources/**/*.{swift,m,h}'
+  s.public_header_files = 'Sources/*.h'
   s.module_name = 'RetroTransition'
   s.frameworks = 'Foundation'
 end
